@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+*{
+
+margin: 0;
+
+padding: 0;
+
+box-sizing: border-box;
+  
+font-family: 'Poppins', sans-serif;
+
+}
+
+header{
+height: 10vh;
+
+}
+
+nav{
+background-color: white;
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+width: 100%;
+padding: 2rem 8rem;
+
+z-index: 2;
+
+position: fixed;
+    
+top:0px;
+}
+#header-logo {
+    height: 50px; 
+    width: auto; 
+    margin-right: 10px;
+}
+
+#logo{
+
+text-transform: uppercase;
+
+}
+
+nav ul{
+
+display: flex;
+
+gap: 40px;
+
+list-style: none;
+
+}
+
+nav a{
+
+color: black;
+
+text-decoration: none;
+
+}
+
+.play{
+background-image: url("https://imgs.search.brave.com/XjTh8jALfnUkITxR5jT-UX2e7kXvVyD9vjmCSZHrg8s/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy81/LzVjL1BsYXlTdGF0/aW9uX2xvZ29fYW5k/X3dvcmRtYXJrLnN2/Zw.svg");
+
+background-size: 80%;
+
+background-position: center;
+
+background-repeat: no-repeat;
+
+background-color: darkblue;
+
+}
+
+.hero{
+
+color: white;
+
+display: flex;
+
+justify-content: end;
+
+padding-bottom: 15vh;
+
+align-items:center;
+
+flex-direction: column;
+
+height: 90vh;
+
+}
+
+.hero h1{
+
+font-size: 5rem;
+
+width: 60%;
+
+text-align: center;
+
+margin-bottom: 10px;
+
+}
+
+.hero button{
+
+color: black;
+
+background: rgb(255, 140, 0);
+
+border: none;
+
+padding: 10px 20px;
+
+font-size: 16px;
+
+}
+main{
+background-color: #ffffff;
+padding-block: 3rem;
+}
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: 45px auto;
+}
+
+.console {
+    display: flex;
+    background-color:red; 
+    height: auto;  
+}
+.console :hover h3{
+    font-size: 22px;
+    text-decoration-line: underline;
+}
+.console :hover{
+    font-size:22px;
+    background-color: black;
+    color: red;
+}
+.imgdiv{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    font-size: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2% 7%;
+}
+
+.imgdiv img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+}
+.games:hover h3{
+    text-decoration-line: underline;
+    font-size:22px;
+}
+.games :hover{
+    font-size:22px;
+    background-color: black;
+    color:  #ADD8E6;
+}
+.games {
+    display: flex;
+    background-color: #ADD8E6; 
+    height: auto;
+}
+.controller:hover h3{
+    text-decoration-line: underline;
+    font-size:22px;
+}
+.controller:hover{
+    font-size: 22px;
+    background-color: black;
+    color: yellow; 
+}
+
+.controller {
+    display: flex;
+    background-color: yellow; 
+    height: 56vh;
+
+}
+
+#para{
+font-size: 1.6rem;
+font-weight: 500;
+}
+
+footer {
+    background-color: #0693E3; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-image {
+    padding: 10px 0; 
+}
+
+.footer-image img {
+    width: 150px; 
+    height: auto; 
+}
+
+.footer-content {
+    margin-top: 20px;
+}
+
+.footer-content h2, .footer-content p, .footer-content ul, .footer-content ol {
+    margin: 10px 0; /* Spacing between elements */
+}
+
+ul {
+    list-style-type: none; /* Removes default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+ul li a {
+    color: rgb(0, 0, 0); 
+    text-decoration: none; 
+}
+@media only screen and (max-width: 600px) {
+    
+    nav ul {
+        
+        flex-direction: column;
+    }
+
+    #header-logo {
+        
+        width: 50%;
+    }
+
+    .hero button {
+        /* Example: adjust button size and font */
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .wrapper {
+        /* Example: adjust padding or margins */
+        padding: 10px;
+    }
+
+    footer {
+        /* Example: change the layout of the footer */
+        text-align: center;
+    }
+
+    .list-div ol {
+        /* Example: adjust list styles */
+        padding-left: 20px;
+    }
+
+    /* Additional responsive adjustments as needed */
+}
+/* product */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+
+}
+.p1{
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+h4{
+    text-align: center;
+    font-size: 1.8rem;
+}
+.product-item {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+.product-grid {
+    display: flex;
+    justify-content: center;
+}
+
+/* contact us */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contact{
+    position: relative;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    background-color: #042e58;
+}
+.contact::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgb(255, 0, 0);
+}
+
+.contact .container{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    
+}
+
+.contact .container .contactinfo{
+    position: relative;
+    width: 350px;
+    margin-left: 165px;
+    height: calc(70% - 80px);
+    background: #042e58;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact .container .contactinfo h2{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.contact .container .contactinfo .info{
+    position: relative;
+    list-style: none;
+}
+
+.contact .container .contactinfo .info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+
+.contact .container .contactinfo .info li span{
+    font-family: 'Ubuntu', sans-serif;
+}
+.contact .container .contactinfo .info li span:nth-child(1){
+    width: 30px;
+    min-width: 30px;
+}
+
+.contact .container .contactinfo .info li span:nth-child(1) img{
+    max-width: 100%;
+    filter: invert(1);
+    opacity: 0.5;
+}
+.contact .container .contactinfo .info li span:nth-child(2){
+    color: white;
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+.contact .container .contactinfo .info li:hover span:nth-child(1) img,
+.contact .container .contactinfo .info li:hover span:nth-child(2){
+    opacity: 1;
+} 
+
+.contact .container .contactinfo .social{
+    position: relative;
+    display: flex;
+}
+.contact .container .contactinfo .social li{
+    list-style: none;
+    margin-right: 15px;
+}
+.contact .container .contactinfo .social li a{
+    text-decoration: none;
+}
+
+.contact .container .contactinfo .social li a img{
+    filter: invert(1);
+    opacity: 0.5;
+}
+.contact .container .contactinfo .social li:hover a img{
+    opacity: 1;
+}
+
+.contact .container .contactForm{
+   position: absolute;
+
+    padding:45px;
+    background: white;
+    margin-left: 450px;
+    top: 35px;
+    width: 600px;
+    height: 100%;
+    box-shadow: 0 50px 50px rgba(0,0,0,0.5); 
+
+}
+.contact .container .contactForm h2{
+    color:#0d00ff;
+    margin-left: 50px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.contact .container .contactForm .formBox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    padding-top: 30px;
+}
+
+.contact .container .contactForm .formBox .inputBox{
+    position: 0 0 35px 0;
+    padding-top: 5px;
+}
+.contact .container .contactForm .formBox .inputBox.w50{
+    width: 47%;
+}
+.contact .container .contactForm .formBox .inputBox.w100{
+    width: 100%;
+}
+.contact .container .contactForm .formBox .inputBox input,
+.contact .container .contactForm .formBox .inputBox textarea
+{
+    width: 100% !important;
+    padding: 5px 0;
+    resize: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+}
+
+.contact .container .contactForm .formBox .inputBox textarea{
+    min-height: 70px;
+}
+.contact .container .contactForm .formBox .inputBox span{
+    position: relative;
+    left: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+    color: #333;
+    transition: 0.3s;
+    pointer-events: none;
+}
+.contact .container .contactForm .formBox .inputBox input:focus ~ span,
+.contact .container .contactForm .formBox .inputBox textarea:focus ~span,
+.contact .container .contactForm .formBox .inputBox input:valid ~ span,
+.contact .container .contactForm .formBox .inputBox textarea:valid ~span{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ff568c;
+}
+
+.contact .container .contactForm .formBox .inputBox input[type="button"]{
+    position: relative;
+    cursor: pointer;
+    background: #0d00ff;
+    color: white;
+    border: none;
+    max-width: 100px;
+    padding: 10px;
+}
+.contact .container .contactForm .formBox .inputBox input[type="button"]:hover{
+    background: #ff568c;
+}
+
+.about-us h1, .team h2 {
+    text-align: center;
+
+}
+.about-us{
+    padding: 30px;
+    letter-spacing: 3%;
+}
+
+.team-member img {
+    width: 150px; 
+    height: auto; 
+    border-radius: 50%; 
+    margin: 0 auto;
+    display: block; 
+}
+
+
+.team-member {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+
+span {
+    font-size: 1.2em; 
+    font-weight: bold;
+}
